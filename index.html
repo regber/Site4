@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/mystyle.css" rel="stylesheet">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo">
+                <a href="#"><span>My</span><span >Hobby</span><span>.com</span></a>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="panel-side">
+            <div>
+                <ul>
+                    <li>Программирование
+                        <ul>
+                            <li><a href="#">C#</a></li>
+                            <li><a href="#">ASP.NET</a></li>
+                            <li><a href="#">WPF</a></li>
+                        </ul>
+                    </li>
+                    <li>3D моделирование
+                        <ul>
+                            <li><a href="#">3DSMax</a></li>
+                            <li><a href="#">Substance 3D Painter</a></li>
+                        </ul>
+                    </li>
+                    <li>Расчеты
+                        <ul>
+                            <li><a href="#">Теплоэнергетика</a></li>
+                            <li><a href="#">Решетчатый метод Больцмана</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="notify">
+                <div class="text subsubtitle">Последняя новость</div>
+                <div class="text notify-message">
+                    Последняя новость на сегодня, это то что я поступил на курсы Digital Design, на которых мы осваиваем различные технологии и языки программирования, где преподаватели всегда рады ответить на наши вопросы. 
+                </div>
+                <div class="notify-link"><a href="#">Читать дальше</a></div>
+            </div>
+        </div>
+        <div class="panel-main">
+            <p class="text title">Основные цели</p>
+            <div class="text regular">Сайт разрабатывался с целью отслеживания собственного прогресса в изучении различных направлений прикладного использования программирования, трехмерного моделирования и математических моделей. Так за весь период осознанного существования были освоены навыки трехмерного моделирования, научился интегрировать разработанные модели в игры. В дальнейшем увлекся изучением точных наук, результатом этого увлечения была математическая модель построенная по решетчатому методу Больцмана и описывающая движение среды в замкнутом объеме при данном расчете использовалась технология <a href="https://ru.wikipedia.org/wiki/CUDA">Nvidia CUDA</a>. Дальнейшую свою деятельность вел на ниве программирования, в ходе которой написал программу интегрирующую интерактив в Fallot 4, программу по автоматизированному выполнению теплотехнических задач которая в качестве результата возвращала word файл. Так же за период своего увлечения программированием было написано много других программ с целью получения практических навыков.</div>
+            <div class="images">
+                <p class="text subtitle">Изображения</p>
+                <div>
+                    <div>
+                        <img src="Images/Image1.png" alt="CUDA">
+                    </div>
+                    <div>
+                        <img src="Images/Image2.png" alt="Interactive">
+                    </div>
+                    <div>
+                        <img src="Images/Image3.jpg" alt="3D">
+                    </div>
+                </div>
+            </div>
+            <p class="text subtitle">Подписаться на рассылку</p>
+            <div class="mailing-form" >
+                <form action="https://localhost:5000/mailing" method="get" >
+                    <div>
+                        <label class="text subsubtitle">Имя:</label>
+                        <input class="text" type="text" required name="Name">
+                    </div>
+                    <div>
+                        <label class="text subsubtitle">Электронная почта:</label>
+                        <input class="text" type="email" required name="Email">
+                    </div>
+                    <div>
+                        <label class="text subsubtitle">Пол:</label>
+                        <div>
+                            <input type="radio" name="Gender" required value="male">
+                            <label class="text">Муж.</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Gender" required  value="female">
+                            <label class="text">Жен.</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text subsubtitle">Интересует:</label>
+                        <div>
+                            <input type="checkbox" name="Programming" >
+                            <label class="text">Программирование</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="3D" >
+                            <label class="text">3D моделирование</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Calculations" >
+                            <label class="text">Расчеты</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text subsubtitle">Интересует:</label>
+                        <select class="text" name="mailingtype">
+                            <option>Общая рассылка</option>
+                            <option>Индивидуальная рассылка</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="text subsubtitle">Комментарий:</label>
+                        <textarea class="text" name="comment"></textarea>
+                    </div>
+
+                    <button class="text sububtitle">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer text subsubtitle">
+        <p>©2015-2022 ООО «Рога и копыта» <a href="https://www.kinopoisk.ru/film/81621/">О нас</a></p>
+    </div>
+</body>
+</html>
