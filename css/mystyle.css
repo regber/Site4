@@ -273,3 +273,22 @@ button {
     font-size: 12px;
     text-shadow: none;
 }
+
+.notify.weather .weather{
+    text-align: center;
+}
+
+#weatherImg{
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+}
+#temperature{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 50px;
+    margin: 0;
+}
+#temperature::after{
+    content: '°';
+}
